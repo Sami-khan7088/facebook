@@ -12,6 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.footer a{
+  text-decoration: none;
+  color:#737373
+  
+}
 .main_div{
   padding-bottom: 130px;
   padding-top: 90px;
@@ -47,25 +52,25 @@ h2{
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     box-sizing: border-box;
     margin: 40px 0 0;
-    padding: 20px 0 28px;
+    padding: 20px 0 23px;
     width: 396px;
     height: 350px;
 }
 input{
   border-radius: 6px;
-  font-size: 17px;
   padding: 14px 16px;
   width: 340px;
   border: 1px solid #e1e3e5;
   color: #1d2129;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 18px;
   height: 52px;
   line-height: 16px;
-  padding: 0 8px;
+  padding: 0 12px;
   vertical-align: middle;
   margin: 0px 18px;
   margin-bottom: 18px;
+  outline-color:#1877f2;
 }
 ::placeholder{
   font-family: Helvetica, Arial, sans-serif;
@@ -130,10 +135,9 @@ a{
 .footer ul{
   padding:0px;
   list-style: none;
-  font-size: small;
+  font-size: 14px;
+  font-weight: 450;
   color:#737373;
-  
-  
 }
 .footer ul li{
   float: left;
@@ -159,6 +163,10 @@ h5{
     justify-content:center;
     width: 100%;
 }
+.createbtn a{
+  color: #fff;
+}
+
 @media screen and (max-width:1000px) {
   .fblog{
     display: block;
@@ -186,7 +194,7 @@ h5{
   text-align: center;
   }
 }
-@media screen and (max-width:680px){
+@media screen and (max-width:640px){
   .fblog{
     display: block;
     flex-direction:row;
@@ -194,14 +202,26 @@ h5{
     justify-content: center;
     align-items: center;
     padding:0% ;
+    margin:2%;
+  }
+  .main_div{
+    padding-top:10% ;
   }
   .logIN{
-    width: 80%;
+    width: 100%;
+    height:auto;
   }
   .logIN input{
-    width: 80%;
+    width: 88%;
+    margin: 3% 2%;
   }
   .main_log button{
-    width: 86%;
+    width:82%;
+  }
+  .fblog h2{
+    display: none;
+  }
+  h5{
+    margin-top:8px;
   }
 }
